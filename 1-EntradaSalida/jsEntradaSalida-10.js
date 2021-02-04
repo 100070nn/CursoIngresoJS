@@ -5,5 +5,18 @@ mostrar el importe con un Descuento del 25 %
 en el cuadro de texto "RESULTADO"*/
 function mostrarAumento()
 {
-	alert("ok");
+	var importe;
+    var importeFinal;
+    var descuento;
+
+    importe = parseFloat(document.getElementById("txtIdImporte").value);
+
+    descuento = importe * 25 / 100;
+
+    importeFinal = importe - descuento;
+
+    document.getElementById("txtIdResultado").value = importeFinal;
+
+    /*
+    Britos Milton */
 }
